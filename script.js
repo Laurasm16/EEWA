@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const temas = document.querySelectorAll("#topics #tema"); // Seleciona todos os itens com id "tema"
-    const docs = document.querySelectorAll(".doc"); // Seleciona todos os elementos com a classe "doc"
+    const temas = document.querySelectorAll(".tema");
+    const docs = document.querySelectorAll(".doc");
 
     temas.forEach((tema, index) => {
         tema.addEventListener('click', function() {
-            const doc = docs[index]; // Encontra o documento correspondente
+            const doc = docs[index]; 
             if (doc.style.display === "none" || doc.style.display === "") {
                 doc.style.display = "block";
             } else {
